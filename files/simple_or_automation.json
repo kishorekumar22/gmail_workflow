@@ -1,0 +1,24 @@
+{
+  "rules": [
+    {
+      "attribute": "from_email",
+      "values": [
+        "no-reply"
+      ],
+      "operator": "Contains"
+    },
+    {
+      "attribute": "has_attachments",
+      "values": [
+        true
+      ],
+      "operator": "Equals"
+    }
+  ],
+  "predicate": "or",
+  "actions": [
+    {
+      "name": "MarksAsUnread"
+    }
+  ]
+}

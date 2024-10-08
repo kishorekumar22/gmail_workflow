@@ -1,0 +1,14 @@
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker, DeclarativeBase
+
+engine = create_engine("sqlite:///emails_automator.sqlite")
+conn = engine.connect()
+
+
+class Base(DeclarativeBase):
+    pass
+
+Base.metadata.bind = engine
+
+Session = sessionmaker(bind=engine)
+db_session = Session()

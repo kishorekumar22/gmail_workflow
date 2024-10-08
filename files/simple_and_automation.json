@@ -1,0 +1,24 @@
+{
+  "rules": [
+    {
+      "attribute": "from_email",
+      "values": [
+        "kishorekumarirtt@gmail.com"
+      ],
+      "operator": "Equals"
+    },
+    {
+      "attribute": "subject",
+      "values": [
+        "Automation"
+      ],
+      "operator": "Contains"
+    }
+  ],
+  "predicate": "and",
+  "actions": [
+    {
+      "name": "MarksAsUnread"
+    }
+  ]
+}

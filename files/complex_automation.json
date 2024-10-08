@@ -1,0 +1,44 @@
+{
+  "rules": [
+    {
+      "attribute": "from_email",
+      "values": [
+        "kishorekumarirtt@gmail.com"
+      ],
+      "operator": "Equals"
+    },
+    {
+      "attribute": "subject",
+      "values": [
+        "the"
+      ],
+      "operator": "Contains"
+    },
+    {
+      "attribute": "created_at",
+      "values": [
+        "1728000000"
+      ],
+      "operator": "Greater than"
+    },
+    {
+      "attribute": "incoming_mail",
+      "values": [
+        true
+      ],
+      "operator": "Equals"
+    }
+  ],
+  "predicate": "and",
+  "actions": [
+    {
+      "name": "MoveToCustomLabel",
+      "params": {
+        "label_name": "sid"
+      }
+    },
+    {
+      "name": "MarksAsUnread"
+    }
+  ]
+}
