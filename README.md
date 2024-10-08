@@ -20,3 +20,8 @@ Standalone Python scripts:
       <img width="1728" alt="Screenshot 2024-10-08 at 7 11 58 PM" src="https://github.com/user-attachments/assets/3c7d93bb-3459-4e9d-85ba-608342ef3ba3">
 
       
+# Librabries used:
+1. google_auth_oauthlib - OAuth 
+2. googleapiclient  - REST API communication with gmail
+3. sqlalchemy - ORM & Data persistance
+4. pydantic   - JSON deserializations
