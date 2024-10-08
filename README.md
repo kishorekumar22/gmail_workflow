@@ -21,7 +21,7 @@ Standalone Python scripts:
 
       
 # Librabries used:
-- google_auth_oauthlib for OAuth2.0
-- googleapiclient  for REST API communication with gmail
-- sqlalchemy for Data persistance
-- pydantic for JSON deserializations
+- `google_auth_oauthlib` for OAuth2.0
+- `googleapiclient`  for REST API communication with gmail
+- `sqlalchemy` for Data persistance
+- `pydantic` for JSON deserializations
