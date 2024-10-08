@@ -24,7 +24,7 @@ def sync_emails_from_mailbox_into_db(api_connector):
                 parsed_email_data = parse_email_data(conv_data)
                 conversations.append(parsed_email_data)
                 Conversation.save_conversations(conversations)
-            print("***** Sync email converation via batch download *****")
+                print("***** Sync email converation via batch download *****")
             if 'nextPageToken' not in results.keys() or count >= SOFT_LIMITED_PAGES:  # Todo: remove the 2nd condition - process only specific number of records soft limit
                 break
             else:
