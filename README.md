@@ -14,7 +14,7 @@ Standalone Python scripts:
 1. Clone the repository: https://github.com/kishorekumar22/gmail_workflow
 2. Navigate to the project folder and execute `pip3 install -r requirements.txt` to install the required packages.
 3. Move the `credentials.json file`(downloaded from the google cloud project) to the `/files` directory in the project.
-4. To run the email downloader script, execute `python3 sync_mailbox_conversations.py`. This will prompt for Google's authentication via an external link. Upon successful login, the emails will be fetched and stored in the local database table `conversations`. The data source used is `sqlite`
+4. To run the email downloader script, execute `python3 sync_mailbox_conversations.py`. This will prompt for Google's authentication via an external link. Upon successful login, the emails will be fetched and stored in the local database table `conversations`. The database used is `sqlite`.
         <img width="1721" alt="Screenshot 2024-10-08 at 7 08 53 PM" src="https://github.com/user-attachments/assets/ede7b814-b37b-4397-a4a8-516f0666bbd1">
 5. To run the automation rule based on the input file, execute `python3 mailbox_automation_executor.py`. The default input rule is `files/simple_and_automation.json` which needs to be updated accordingly.
       <img width="1728" alt="Screenshot 2024-10-08 at 7 11 58 PM" src="https://github.com/user-attachments/assets/3c7d93bb-3459-4e9d-85ba-608342ef3ba3">
