@@ -21,7 +21,7 @@ def initialize_workflow_from_file(workflow_config_json):
 
 def main():
     try:
-        # initialize_db_schema()
+        initialize_db_schema()
         workflow = initialize_workflow_from_file('files/simple_and_automation.json')
         print("**** Filtering records and execution of workflow started. *****")
         workflow.filter_matching_data()
